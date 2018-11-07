@@ -1,0 +1,326 @@
+% -- Encoding UTF-8 without BOM
+% -- XeLaTeX => PDF (BIBER)
+
+\documentclass[]{cv-style}                     % Add 'print' as an option into the [] to remove colors for printing.
+\sethyphenation[variant=british]{english}{}    % Add words between the {} to avoid them to be cut 
+
+\begin{document}
+
+\header{Milad}{Irannejad}                      % First name and last name
+\lastupdated
+
+
+%----------------------------------------------------------------------------------------------------
+%  SIDEBAR SECTION  --  In the aside, each new line forces a line break
+%----------------------------------------------------------------------------------------------------
+
+\begin{aside}
+%
+\section{Contact}
+2203-1 The Esplanade
+Toronto, ON  M5E 0A8
+CANADA
+~
++1 (613) 600 7667
+~
+\href{mailto:moorara@gmail.com}{moorara@gmail.com}
+\href{http://linkedin.com/in/moorara}{linkedin/in/moorara}
+\href{http://github.com/moorara}{github.com/moorara}
+% \href{http://twitter.com/moorara}{twitter.com/moorara}
+%
+\section{Programming}
+Go, Node.js
+JavaScript, TypeScript
+% Ruby, Python
+% Java, C\#, C/C++
+%
+\section{Database}
+MongoDB, ArangoDB
+CockroachDB
+PostgreSQL
+% Cassandra, Redis
+%
+\section{Back-End}
+Kubernetes, Helm
+Docker, Swarm
+Microservices
+Serverless
+gRPC, GraphQL, REST
+NATS, Service Mesh
+% Operator Framework
+% Vault
+%
+\section{Front-End}
+Progressive Web Apps
+React, Redux, Relay
+% Webpack, Babel
+% Mocha, Jest, Enzyme
+%
+\section{SRE/DevOps}
+Continuous Integration
+Continuous Delivery
+Packer, Terraform
+Prometheus, Grafana
+Elasticsearch, Kibana
+OpenTracing, Jaeger
+%
+\section{Cloud Computing}
+Amazon Web Services
+Microsoft Azure
+Google Cloud Platform
+%
+\section{Software Design}
+TDD/BDD, OOP
+Design Patterns
+Domain-Driven Design
+%
+\section{Computer Science}
+Algorithms
+Data Structures
+Distributed Systems
+%
+\section{Learning}
+Machine Learning
+% TensorFlow
+% Blockchain
+%
+\end{aside}
+
+
+%----------------------------------------------------------------------------------------------------
+%  OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------------------
+
+\section{Objective}
+
+I am passionate about distributed systems, cloud computing, SaaS, and open source.
+I am looking for opportunities in cloud services, cloud infrastructures, orchestration, and DevOps/SRE.
+
+
+%----------------------------------------------------------------------------------------------------
+%  WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{entrylist}
+
+  \entry
+  {Oct18--Now}
+  {Senior Back-End Engineer - Flybits}
+  {Toronto, ON, Canada}
+  {I am}
+
+  \entry
+  {Feb16--Sep18}
+  {Software Engineer - Qlik}
+  {Ottawa, ON, Canada}
+  {I worked on features, services, and infrastructures for Qlik Sense Cloud.
+   Moreover, I contributed to back-end services, infrastructures, and pipelines for Qlik Multi-Cloud Solution.
+   I leveraged a wide range of technologies, including, but not limited to,
+   Go, Node.js, Docker, Kubernetes, Helm, Operator Framework, Docker Swarm, Amazon Web Services,
+   MongoDB, Prometheus, Grafana, Terraform, Vault, etc., as well as contributing to open-source projects.
+   Continuous integration and delivery, automated testing, and monitoring were an integral part of my work.
+   I worked in a very agile environment using Scrumban and collaborated with remote and QE teams.
+   More specifically, I helped with developing a reliable and scalable cloud platform, delivering Qlik Sense Cloud for Business (QSCB), building the hybrid cloud platform for Qlik's Multi-Cloud Solution, and scaling service-to-service communications using messaging systems.}
+
+  \entry
+  {Jan15--Apr15}
+  {Software Tools Development Student - BlackBerry}
+  {Waterloo, ON, Canada}
+  {As a full-stack developer, I was working with Ruby on Rails, MySQL, JavaScript, and other related web technologies.
+  I fixed bugs and developed new features for a web application used by testers for scheduling, managing, and running their tests.}
+
+  % \entry
+  % {2011--2012}
+  % {Software Developer}
+  % {Tehran, Iran}
+  % {Farazpardazan \\
+  %  I designed and built tools for automating and accelerating development process.}
+
+  % \entry
+  % {2009--2010}
+  % {Software Engineer}
+  % {Tehran, Iran}
+  % {Iranian Association for Management of Technology \\
+  %  I made use of .Net technologies for developing a solution for automating organizational processes.
+  %  I went through the full cycle of software development, deployment, and maintenance.}
+
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------------------
+%  EDUCATION SECTION
+%----------------------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{entrylist}
+
+  \entry
+  {2013--2015}
+  {M.Sc. in Software Engineering {\normalfont [GPA: 87.80/100]}}
+  {University of Waterloo}
+  {\small{Thesis: Identifying Defects Related to the Order in which Messages are Received in Message-Passing Systems \\
+   Course Summary: Methods and Tools for Software Engineering, Distributed Systems \\ % Computer-Aided Verification, Statistics in Engineering
+   Scholarships: Faculty of Engineering Graduate Scholarship (x2), Graduate Research Studentship (x7), and International Master's Student Award (x6)
+   }}
+
+  \entry
+  {2006--2011}
+  {B.Sc. in Software Engineering {\normalfont [GPA: 16.69/20]}}
+  {Amirkabir University of Technology}
+  {\small{Thesis: Finding Expert Users in Java Forums using Social Network Analysis \\
+   Course Summary: Algorithms Design, Data Structures, Database Design, Artificial Intelligence, Information and Communication Security
+   % Data Mining, Compilers Design, Software Engineering, Internet Engineering, Information Retrieval, 
+   }}
+
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------------------
+%  PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\begin{entrylist}
+
+  \entry
+  {July 2017}
+  {\href{http://ieeexplore.ieee.org/abstract/document/7964877}{A Reordering Framework for Testing Message-Passing Systems}}
+  {Toronto, ON, Canada}
+  {\small{2017 IEEE 20th International Symposium on Real-Time Distributed Computing (ISORC)}}
+
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------------------
+%  PROJECTS SECTION
+%----------------------------------------------------------------------------------------------------
+
+\section{Projects}
+
+\begin{entrylist}
+
+  \textbf{github.com/moorara/goto} Data structures, algorithms, and more for gophers \\
+  \textbf{github.com/moorara/gocert} Generating self-signed SSL/TLS certificate chain made easy \\
+  \textbf{github.com/moorara/cloud-images} Building pre-configured machine images for cloud platforms \\
+  \textbf{github.com/moorara/microservices-demo} A microservices application with production best practices  \\
+  \textbf{github.com/moorara/serverless-demo} A fully serverless application with production best practices  \\
+
+  % \entry
+  % {Sum. 2011}
+  % {Finding Expert Users in Java Forums}
+  % {Amirkabir University of Technology}
+  % {I applied an improved version of PageRank algorithm to a weighted graph of users based on the relevance of
+  % their posts to a specific topic in Java Technology Concept Map in order to rank knowledge of users on a specific topic in Java.}
+
+  % \entry
+  % {Sum. 2009}
+  % {Vector Model Search Engine}
+  % {Amirkabir University of Technology}
+  % {I designed and implemented a search engine for a mass amount of unstructured documents in Java.
+  % I practiced handling data cannot be fit in memory, parsing streams of data, indexing, clustering, and searching.}
+
+  % \entry
+  % {2009--2010}
+  % {IRAMOT Electronic Secretariat}
+  % {Iranian Association for Management of Technology}
+  % {I designed, implemented, tested, and deployed a software solution using Microsoft
+  % .Net technologies and SQL Server for automation of business operations and organizational routines.}
+
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------------------
+%  SKILLS SECTION
+%----------------------------------------------------------------------------------------------------
+
+% \newpage
+% \section{Skills}
+
+% \textbf{Programming Languages:} Go, JavaScript, TypeScript, Ruby, Python, Java, C\#, C/C++ \\
+% \textbf{Database:} MongoDB, ArangoDB, CockroachDB, PostgreSQL, Cassandra, Redis \\
+% \textbf{Back-End:} Microservices, Serverless, gRPC, GraphQL, REST, NATS \\
+% \textbf{Containerization:} Kubernetes, Helm, Docker, Swarm, Operator Framework, Service Mesh \\
+% \textbf{Front-End:} Progressive Web Applications, React, Redux, Relay, Vue, Webpack, Babel \\
+% \textbf{Testing:} Unit Testing, Component Testing, Integration Testing, End-2-End Testing \\
+% \textbf{SRE/DevOps:} Continuous Integration, Continuous Delivery \\
+% \textbf{Monitoring:} Prometheus, Grafana, Elasticsearch, Kibana, OpenTracing, Jaeger \\
+% \textbf{Infrastructure:} Packer, Terraform, Consul, Vault, Etcd \\
+% \textbf{Cloud Computing:} Amazon Web Services, Google Cloud Platform, Microsoft Azure \\
+% \textbf{Computer Science:} Algorithms, Data Structures, Distributed Systems, Machine Learning \\
+% \textbf{Programming Paradigms:} Object-Oriented, Event-Driven, Functional \\
+% \textbf{Development Methods:} TDD/BDD, Design Patterns, Domain-Driven Design \\
+% \textbf{Agile:} Scrum, Kanban \\
+
+
+%----------------------------------------------------------------------------------------------------
+%  CERTIFICATION SECTION
+%----------------------------------------------------------------------------------------------------
+
+% \section{Certifications}
+
+% \begin{entrylist}
+
+  % \entry
+  % {Feb 2016}
+  % {Big Data Specialization}
+  % {Coursera Verified Certificates}
+  % {Courses:
+  % \begin{itemize}
+  %   \item \href{http://coursera.org/verify/WUHGJVM43XRY}{Introduction to Big Data}
+  %   \item \href{http://coursera.org/verify/Q7FQMKACTV5G}{Hadoop Platform and Application Framework}
+  %   \item \href{http://coursera.org/verify/BQ4G2ZLX8KP7}{Introduction to Big Data Analytics}
+  %   \item \href{http://coursera.org/verify/Y8WH9EQ2YVMM}{Machine Learning with Big Data}
+  % \end{itemize}}
+
+  % \entry
+  % {Jul 2015}
+  % {MongoDB for Node.js Developers}
+  % {MongoDB, Inc.}
+  % {Verify at \href{http://education.mongodb.com/downloads/certificates/6c901548426b4c91b2fc8d594c14ce27/Certificate.pdf}{education.mongodb.com}}
+
+  % \entry
+  % {Nov 2014}
+  % {Web Application Architectures}
+  % {Coursera Verified Certificates}
+  % {Verify at \href{http://coursera.org/verify/GGEQVNQNY7}{coursera.org/verify/GGEQVNQNY7}}
+
+  % \entry
+  % {Sept 2014} 
+  % {Software Security}
+  % {Courser Verified Certificates}
+  % {Verify at \href{http://coursera.org/verify/5RLL8447KM}{coursera.org/verify/5RLL8447KM}}
+
+% \end{entrylist}
+
+
+%----------------------------------------------------------------------------------------------------
+%  REFERENCES SECTION
+%----------------------------------------------------------------------------------------------------
+
+% \section{References}
+
+% Please check out my LinkedIn profile at \href{http://linkedin.com/in/moorara}{linkedin.com/in/moorara}. \\
+% \textbf{Christophe Cornu:} Senior Architect at Qlik, christophe.cornu@gmail.com \\
+% \textbf{Sebastian Fischmeister:} Associate Professor at University of Waterloo, sfischme@uwaterloo.ca
+% \textbf{Adam Paleczny:} Lead Software Developer, adam.paleczny@gmail.com \\
+% \textbf{Ardalan Saberi:} Enterprise Architect, ardalan.saberi@hotmail.com \\
+
+
+%----------------------------------------------------------------------------------------------------
+%  POSTSCRIPT
+%----------------------------------------------------------------------------------------------------
+
+
+Please visit my \href{http://linkedin.com/in/moorara}{LinkedIn} for references, accomplishments, and more!
+
+
+%----------------------------------------------------------------------------------------------------
+%  END
+%----------------------------------------------------------------------------------------------------
+
+
+\end{document}
