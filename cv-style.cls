@@ -129,11 +129,11 @@
   {%
     \color{%
       \ifcase\value{colorCounter}%
-        blue\or%
         red\or%
-        green\or%
-        orange\or%
         purple\or%
+        green\or%
+        blue\or%
+        orange\or%
         chartreuse\or%
         turquoise\or%
         darkgolden\else%
