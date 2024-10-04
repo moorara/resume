@@ -33,31 +33,28 @@ Toronto, ON  CANADA
 Algorithms
 Data Structures
 Distributed Systems
+Machine Learning
 %
 \section{Programming}
-Go, Python
+Go, Python, Ruby
 JavaScript, TypeScript
 % Java, C\#, C/C++
 %
 \section{Development}
-TDD/BDD, OOP
+OOP, TDD
 Design Patterns
 Domain-Driven Design
 %
 \section{Database}
-PostgreSQL
-CockroachDB
-MongoDB, ArangoDB
+Postgres, BigQuery
+MongoDB, Redis
 %
 \section{Backend}
 Microservices
 Serverless
 REST, gRPC, GraphQL
 OAuth 2.0, OIDC
-Docker, Kubernetes
-Service Mesh
-Kafka, NATS
-% Helm, Kustomize
+% Kafka, NATS
 % RabbitMQ
 %
 % \section{Frontend}
@@ -69,15 +66,20 @@ Infra-as-Code
 Immutable Infra
 % Packer
 Terraform, Vault
+Kubernetes, Containers
 Automation, CI/CD
+Helm, GitOps
+% Service Mesh
 Observability
 Monitoring
 Elasticsearch, Kibana
 Prometheus, Grafana
 OpenTelemetry, Jaeger
-Datadog, PagerDuty
+Teleport, PagerDuty
+% Datadog
 %
 \section{Cloud Computing}
+Cloudflare
 Google Cloud Platform
 Amazon Web Services
 % Microsoft Azure
@@ -96,17 +98,17 @@ Amazon Web Services
 
 \section{Highlights}
 
-I enjoy building meaningful and impactful things.
-I am passionate about building highly available, scalable, reliable, and autonomous systems.
-I am also interested in improving developer experience and software delivery performance.
-(more about me \href{https://milad.dev/about}{here})
+%I enjoy building meaningful and impactful things.
+%I am passionate about building highly available, scalable, reliable, and autonomous systems.
+%I am also interested in improving the developer experience and software delivery performance.
+%(more about me \href{https://milad.dev/about}{here})
 
 \begin{itemize}
   \setlength{\itemsep}{-4pt}
-  \item 6+ years of experience
-  \item Distributed Systems, Cloud Computing, Multi-Cloud and Hybrid Cloud
-  \item Domain-Driven Design, Platformization, Microservices, Automation, DX
+  \item 10+ years of experience
+  % \item Distributed Systems, Cloud Computing, Multi-Cloud and Hybrid Cloud
   \item Infrastructure-as-Code, DevOps, SRE, Observability, Monitoring
+  \item Domain-Driven Design, Platform-as-a-Service, Microservices, Automation, DX
 \end{itemize}
 
 
@@ -119,20 +121,41 @@ I am also interested in improving developer experience and software delivery per
 \begin{entrylist}
 
   \entry
+  {\small Dec22--Now}
+  {Senior Site Reliability Engineer - GitLab}
+  {Remote, Canada}
+  {
+    \begin{itemize}
+      \item Managed GitLab's Kubernetes clusters, performing upgrades, CA rotations, and system monitoring.
+      \item Migrated Cloudflare Pages Rules to new Rulesets, optimizing Cache Rules.
+      \item Executed a major version upgrade of HAProxy across all environments with zero downtime.
+      \item Identified and contributed to resolving a large-scale \href{https://github.com/haproxy/haproxy/issues/2262}{bug} in HAProxy.
+      \item Implemented GitOps using Flux and ArgoCD, leading the initial evaluation.
+      \item Enabled IPv6 across networking and migrated load balancers to Passthrough Network, ensuring zero downtime.
+      \item Took ownership of the Teleport platform, automated processes, integrating with SIEM systems, and transferred it to the Security department.
+      \item Led technical and behavioral interviews for team and cross-team hiring efforts.
+      \item Participated in on-call rotations, managing incidents from identification to resolution, conducting post-incident reviews and taking corrective actions.
+      \item Improved and contributed to internal runbooks and public handbook.
+      \item Managed interrupt-driven tasks, collaborating with other teams and directly supporting customers.
+    \end{itemize}
+    Technologies: Cloudflare, GKE, EKS, Helm, Postgres, Go, Terraform, Grafana, etc.
+  }
+
+  \entry
   {\small Sep21--Jul22}
   {Senior Production Engineer - Shopify}
   {Remote, Canada}
   {
     \begin{itemize}
-      \item Maintained, upgraded, and monitored the fleet of core GKE clusters.
-      \item Enabled all infra teams to migrate off Docker and move to containerd.
-      \item Contributed to the preparation and execution of two rounds of scale tests.
-      \item Helped with bootstrapping two new regions and expanding core infra globally.
-      \item Improved Shopify's custom K8s controller for business-specific scaling.
-      \item Carried out capacity planning and provisioning for Shopify's core infra.
-      \item On-call: responded to incidents and provided support to other teams.
+      \item Managed, upgraded, and monitored GKE clusters for core infrastructure.
+      % \item Facilitated the migration from Docker to containerd across infrastructure teams.
+      % \item Contributed to large-scale test preparations and execution.
+      % \item Bootstrapped new regions, expanding global infrastructure.
+      \item Improved Shopify’s custom Kubernetes controller for optimized scaling.
+      \item Performed capacity planning and provisioning for core infrastructure.
+      \item Participated in on-call rotations, responding to incidents and supporting other teams.
     \end{itemize}
-    Technologies: Google Cloud, GKE, Kubernetes, Go, Terraform, etc.
+    Technologies: Cloudflare, GKE, Kubernetes, Postgres, Go, Terraform, etc.
   }
 
   \entry
@@ -141,14 +164,12 @@ I am also interested in improving developer experience and software delivery per
   {Remote, Canada}
   {
     \begin{itemize}
-      \item Contributed to building and launching Uber Eats Ads offering.
-      \item Designed and implemented Ads Platform campaign management data model.
-      \item Designed and built Ad Account for Uber's enterprise partners and customers.
-      \item Built GraphQL backend for Uber's Ad Platform APIs.
-      \item Contributed to building Ads Manager web application for enterprise partners.
-      \item Participated in on-call shifts and handled Ads platform production incidents.
-      \item Authored engineering design docs and reviewed other teams' docs.
-      \item Collaborated with remote teams, product managers, and data scientists.
+      % \item Contributed to the development and launch of Uber Eats Ads.
+      \item Designed the Ads Platform campaign management service and built features for enterprise partners.
+      \item Developed the GraphQL backend for Ad Platform APIs.
+      \item Participated in on-call shifts, managing Ads platform production incidents.
+      % \item Authored and reviewed engineering design documents.
+      % \item Collaborated closely with remote teams, product managers, and data scientists.
     \end{itemize}
     Technologies: Go, Bazel, Kafka, Docstore, HIVE, JavaScript, React, GraphQL, etc.
   }
@@ -159,16 +180,13 @@ I am also interested in improving developer experience and software delivery per
   {Toronto, ON, Canada}
   {
     \begin{itemize}
-      \item Developed and led development of new microservices.
-      \item Created core libraries in Go for authentication, observability, etc.
-      \item Created and implemented a testing strategy for the engineering teams.
-      \item Implemented observability using structured logging, metrics, and tracing.
-      \item Created new modular CI/CD pipelines and a release process.
-      \item Automated Kubernetes configuration and CI/CD using GitOps and Flux.
-      \item Migrated, improved, and automated many aspects of the platform.
-      \item Built and led a platform team of two full-time engineers and two co-op students.
-      \item Contributed to building test automation and performance engineering teams.
-      \item Actively participated in interviewing and onboarding new team members.
+      \item Led microservices development and created core Go libs for observability.
+      % \item Developed and implemented a testing strategy for engineering teams.
+      % \item Implemented observability using structured logging, metrics, and tracing.
+      % \item Created modular CI/CD pipelines and an efficient release process.
+      \item Automated Kubernetes configurations and CI/CD workflows using GitOps and Flux.
+      %\item Managed a platform team of engineers and co-op students.
+      %\item Conducted interviews and onboarded new team members.
     \end{itemize}
     Technologies: AWS, Microservices, Kubernetes, Docker, Go, MongoDB, PostgreSQL, RabbitMQ, etc.
   }
@@ -268,15 +286,15 @@ Please visit my \href{http://github.com/moorara}{GitHub} page for the full list 
   %{\small Jun11--Oct11}
   %{Finding Expert Users in Java Forums}
   %{Amirkabir University of Technology}
-  %{I applied an improved version of PageRank algorithm to a weighted graph of users based on the relevance of
-  % their posts to a specific topic in Java Technology Concept Map in order to rank knowledge of users on a specific topic in Java.}
+  %{I applied an improved version of the PageRank algorithm to a weighted graph of users based on the relevance of
+  % their posts to a specific topic in Java Technology Concept Map to rank the knowledge of users on a specific topic in Java.}
 
   % \entry
   % {\small Sum. 2009}
   % {Vector Model Search Engine}
   % {Amirkabir University of Technology}
-  % {I designed and implemented a search engine for a mass amount of unstructured documents in Java.
-  % I practiced handling data cannot be fit in memory, parsing streams of data, indexing, clustering, and searching.}
+  % {I designed and implemented a search engine for many unstructured documents in Java.
+  % I practiced handling data that cannot be fit in memory, parsing data streams, indexing, clustering, and searching.}
 
 \end{entrylist}
 
